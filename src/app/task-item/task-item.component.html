@@ -1,0 +1,4 @@
+<div appHoverHighlight [ngClass]="{ completed: task.completed }">
+  <input type="checkbox" [checked]="task.completed" (change)="onToggle()" />
+  {{ task.title | uppercase | reverse }}
+</div>
